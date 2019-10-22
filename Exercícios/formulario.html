@@ -1,0 +1,64 @@
+<?php
+
+echo "GET e POST <br>";
+
+echo "<br>";
+
+?>
+<!-- 2. Crie o arquivo ​formulario.html​ na mesma pasta que o anterior, com o seguinte código e acessá-lo:
+               <!DOCTYPE HTML>
+               <html>
+               <body>
+</form>
+               </body>
+               </html>
+a. O que acontece agora em imprimir.php se enviarmos o formulário com dados?
+b. Modifique imprimir.php para que ele imprima algum valor de pontual(por exemplo, o nome) de $ _GET.
+c. Modifique imprimir.php para que imprima todos os valores usando um foreach.
+3. Modifique o arquivo do exercício 2 para que ele envie os dados por meio do POST. Como devemos modificar o imprimir.php para que ele continue funcionando e possamos ver os dados que enviamos?
+a. Teste a função do php ​getAllHeaders()​ e imprima seu resultado. O que encontramos?
+<form​ ​action​=​"imprimir.php"​ ​method​=​"get"​> <label​ for​=​"nome"​>​Nome​:​</label> <input​ type​=​"text"​ name​=​"nombre"​> <br>
+<label​ for​=​"email"​>​E​-​mail​:​</label> <input​ type​=​"text"​ name​=​"email"​>
+<br>
+<button​ ​type​=​"submit"​>Enviar</button>
+ 
+ b. Assim como imprimimos $_POST e $_GET, há outras variáveis globais que podemos usar. Teste cada uma dessas variáveis em uma ordem vazia e, em seguida, adicione dados:
+i. $_SERVER
+ii. $_FILES
+iii. $_REQUEST
+iv. $_SESSION
+v. $_COOKIE
+vi. $GLOBALS -->
+
+<!-- <!DOCTYPE HTML>
+<html>
+    <body>
+        <form action="imprimir.php" method="get">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nombre">
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html> -->
+
+<!-- Exercício 03 - Método post -->
+
+<!DOCTYPE HTML>
+<html>
+    <body>
+        <form action="imprimir.php" method="POST">
+            <label for="nome">Nome:</label>
+            <input type="text" name="nombre">
+            <br>
+            <label for="email">E-mail:</label>
+            <input type="text" name="email">
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+    </body>
+</html>
+
